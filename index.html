@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Teoria das Cordas</title>
+    <script type="module" src="js/main.js"></script>
+</head>
+
+<body>
+    <header>
+        <img class="logo" src="img/Logo.png" width="100" height="100" alt="Logo da ONG Teoria das Cordas">
+    </header>
+
+    <nav>
+        <button class="menu-hamburguer" aria-label="Abrir Menu">☰</button>
+
+        <ul class="menu">
+            <li><a href="#inicio" class="nav-link" data-target="secao-inicio">Início</a></li>
+            
+            <li class="dropdown">
+                <a href="#projetos" class="nav-link" data-target="secao-projetos">Projetos ▾</a>
+                <ul class="submenu">
+                    <li><a href="#acoes" class="nav-link" data-target="secao-projetos">Nossas Ações</a></li>
+                    <li><a href="#resultados" class="nav-link" data-target="secao-projetos">Resultados</a></li>
+                </ul>
+            </li>
+
+            <li><a href="#cadastro" class="nav-link" data-target="secao-cadastro">Cadastro</a></li>
+        </ul>
+    </nav>
+    <br>
+    
+    <main id="app-container">
+
+        
+        <section id="secao-inicio" class="view-section">
+            <section class="quem-somos">
+                <h3>Quem Somos?</h3>
+                <p>A ONG Teoria das Cordas é uma organização sem fins lucrativos dedicada a transformar a realidade de crianças e adolescentes em situação de vulnerabilidade social em comunidades carentes. Acreditamos que a arte, em especial a música, possui uma força de coesão e resiliência capaz de reescrever destinos. Muito além do ensino de notas e acordes, a nossa atuação é pautada na promoção de direitos humanos, na cultura e na inclusão social, oferecendo um ecossistema seguro onde o desenvolvimento humano acontece de maneira integral.</p>
+            </section>
+            <br>
+            <section class="nossa-historia">
+                <h3>Nossa História</h3>
+                <p>A iniciativa nasceu da observação urgente de uma lacuna social: o abismo de oportunidades enfrentado por jovens que crescem cercados por contextos de alta vulnerabilidade, onde o aliciamento pelo crime e pelas drogas muitas vezes se apresenta como o único caminho visível. <br><br>
+                Inspirados pela física de que as cordas vibrantes geram harmonia e conexões fundamentais para o universo, fundamos a Teoria das Cordas com a premissa de que a vibração de um instrumento musical pode ecoar como uma alternativa real de vida. O que começou como um sonho coletivo de resgate social por meio da arte rapidamente se estruturou em um projeto sólido de impacto comunitário, unindo educadores, voluntários e parceiros em torno de uma causa comum: blindar o futuro da nossa juventude através da cultura.</p>
+            </section>
+            <br>
+            <section class="nossos-objetivos">
+                <h3>Nossos Objetivos</h3>
+                <p>O objetivo central da ONG Teoria das Cordas é influenciar crianças e adolescentes de comunidades carentes a encontrarem na música um espaço multifacetado de crescimento e dignidade. Nossas metas e pilares de atuação contemplam:</p>
+                <section class="subtema1">
+                    <ul class="subtema1-lista">
+                        <li><h4>Lugar de Desenvolvimento Humano e Descanso:</h4>
+                            Proporcionar um ambiente acolhedor e seguro que funcione como um refúgio das pressões e dos riscos cotidianos das ruas, estimulando a autoestima, a disciplina, a concentração e a expressão emocional dos jovens.
+                        </li>
+                    </ul>
+                </section>
+                <section class="subtema2">
+                    <ul class="subtema2-lista">
+                        <li><h4>Caminho para Oportunidades e Profissão:</h4>
+                            Capacitar tecnicamente os alunos na prática instrumental e teórica, abrindo portas para o mercado artístico, cultural e educacional, seja através da formação de novos músicos, professores ou profissionais da indústria criativa.</li>
+                    </ul>
+                </section>
+                <section class="subtema3">
+                    <ul class="subtema3-lista">
+                        <li><h4>Prevenção e Afastamento da Vulnerabilidade:</h4>
+                            Atuar de forma preventiva, tirando crianças e adolescentes de locais de exposição à criminalidade e ao uso de drogas, oferecendo a eles a vivência de uma realidade totalmente diferente, pautada em valores construtivos, cidadania e bem-estar.
+                        </li>
+                    </ul>
+                </section>
+                <section class="subtema4">
+                    <ul class="subtema4-lista">
+                        <li><h4>Ampliação de Horizontes:</h4>
+                            Permitir que cada participante experimente o poder transformador de sonhar com um futuro melhor, provando que a arte pode levá-los a conhecer novos lugares, culturas e perspectivas de vida.
+                        </li>
+                    </ul>
+                </section>
+            </section>
+            <br>
+            <section class="fotos">
+                <h3>Galeria de Fotos</h3>
+                <div class="imagens" id="galeria-container">
+                </div>
+            </section>
+        </section>
+
+        
+        <section id="secao-projetos" class="view-section" style="display: none;">
+            <h2>Projetos</h2>
+            <p>A ONG <strong>Teoria das Cordas</strong> desenvolve diversos projetos voltados para a formação musical, capacitação profissional e expressão artística de crianças, adolescentes e jovens adultos em situação de vulnerabilidade social. Abaixo estão alguns dos principais projetos que realizamos:</p>
+            <br>
+            
+            <section>
+                <h3>Projeto Acordes do Amanhã</h3>
+                <h4>Formação Musical de Base</h4>
+                <article>
+                    <p>Neste projeto temos oficinas regulares de iniciação musical focadas em instrumentos de cordas (violão, guitarra, ukulele, violino ou contrabaixo, e etc). As aulas seriam no contraturno escolar, estruturadas em módulos (do básico ao intermediário). Além da técnica instrumental, o projeto trabalha a teoria musical básica, disciplina, concentração e escuta ativa. Com foco principal em servir como o "lugar de descanso e refúgio" seguro, tirando os jovens da rua nos horários de maior vulnerabilidade.</p>
+                </article>
+            </section>
+            <br>
+            
+            <section>
+                <h3>Projeto Mãos que Criam</h3>
+                <h4>Luthieria Social para Capacitação Profissional</h4>
+                <article>
+                    <p>É um curso prático voltado para adolescentes mais velhos e jovens adultos sobre manutenção, restauração e construção de instrumentos musicais (luthieria). Nele os alunos aprendem a consertar os próprios instrumentos da ONG e recebem formação técnica em marcenaria leve, reparos e ajustes. Tendo o foco principal em abrir portas para uma profissão no mercado da música e da cultura, gerando renda e autonomia financeira.</p>
+                </article>  
+            </section>
+            <br>
+            
+            <section>
+                <h3>Projeto Orquestra Comunitária Teoria das Cordas</h3>
+                <h4>Palco e Expressão</h4>
+                <article>
+                    <p>É um grupo musical coletivo formado pelos alunos para apresentações públicas em praças, feiras, escolas, asilos e eventos culturais da cidade. São ensaios em grupo focados na socialização, trabalho em equipe e superação da timidez. As apresentações dão visibilidade aos jovens e mostram à sociedade o potencial da comunidade, além de dar oportunidades de vivenciar experiências diferentes, viajar para outras regiões para se apresentar e elevar a autoestima dos participantes.</p>
+                </article>
+            </section>
+            <br>
+            
+            <section>
+                <h3>Projeto Trilha Sonora da Vida</h3>
+                <h4>Oficinas de Composição e Produção Digital</h4>
+                <article>
+                    <p>Um núcleo voltado para a criação autoral, unindo o aprendizado de instrumentos acústicos e elétricos com noções básicas de produção de áudio digital (gravação em home studio, edição de som e beats). Nele os jovens aprendem a colocar suas histórias, dores e sonhos em letras de músicas, gravando suas próprias faixas com o apoio de mentores e voluntários da área de tecnologia e arte. Trazendo mais inovação, expressão emocional profunda e contato inicial com a produção cultural contemporânea.</p>
+                </article>
+            </section>
+            <br>
+            
+            <section>
+                <h3>Faça parte desse projeto!!</h3>
+                <section>
+                    <h4>Doando</h4>
+                    <p>Você pode contribuir com a ONG Teoria das Cordas através de doações financeiras, materiais ou equipamentos musicais. Cada contribuição faz uma diferença significativa na vida das crianças e adolescentes atendidos.</p>
+                    <img src="img/qrcode.png" width="40" height="40" alt="Nosso QR Code para doações">
+                </section>
+                <section>
+                    <h4>Voluntariando</h4>
+                    <p>Se você tem habilidades musicais, pedagógicas ou administrativas, considere se tornar um voluntário. Sua experiência e dedicação podem transformar vidas e fortalecer nossa missão.</p>
+                    
+                    <a href="#cadastro" class="nav-link" data-target="secao-cadastro">Clique aqui e seja nosso voluntário</a>
+                </section>
+            </section>
+        </section>
+
+        
+        <section id="secao-cadastro" class="view-section" style="display: none;">
+            <header>
+                <h1>Que bom que veio!</h1>
+                <span class="badge">Vagas Abertas</span>
+                <span class="badge badge-destaque">Voluntariado 2026</span>
+                <p>Na ONG <strong>Teoria das Cordas</strong>, não ensinamos apenas notas musicais; nós estendemos uma mão firme para resgatar crianças e adolescentes que o mundo tenta silenciar nas ruas. Cada acorde que ensinamos é um escudo contra a desesperança, um refúgio seguro contra o abismo das drogas e da criminalidade, e a prova viva de que essas vidas importam e merecem um futuro brilhante. Venha doar seu tempo, seu talento e seu amor para transformar a realidade de quem só precisa de uma oportunidade para mudar o próprio destino.</p>
+            </header>
+
+            <form id="meu-formulario" action="sucesso.html" method="POST">
+                <div id="mensagem-sucesso" class="alerta-sucesso" style="display: none;">
+                    <strong>Sucesso!</strong> Seu cadastro foi enviado com sucesso. Entraremos em contato em breve.
+                </div>
+
+                <fieldset>
+                    <legend><strong>Dados Pessoais</strong></legend>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" id="nome" name="nome" required>
+                    <br><br> 
+                    <label for="email">E-mail de Contato:</label>
+                    <input type="email" id="email" name="email" required>
+                    <br><br>
+                    <label for="nascimento">Data de Nascimento:</label>
+                    <input type="date" id="nascimento" name="nascimento">
+                    <br><br>
+                    <label for="cpf">CPF:</label>
+                    <input type="text" id="cpf" name="cpf" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" placeholder="000.000.000-00">
+                    <br><br>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" id="telefone" name="telefone" placeholder="(00) 00000-0000" pattern="\d{10,11}" required>
+                    <br><br>
+                    <label for="cep">CEP:</label>
+                    <input type="text" id="cep" name="cep" placeholder="00000-000" pattern="[0-9]{5}-[0-9]{3}" required>
+                </fieldset>
+                <br>
+                <fieldset>
+                    <legend><strong>Área de Atuação</strong></legend>
+                    <label><input type="radio" name="area" value="musica" required> Aulas de Instrumentos</label> <br>
+                    <label><input type="radio" name="area" value="luthieria"> Luthieria e Marcenaria leve</label> <br>
+                    <label><input type="radio" name="area" value="eventos"> Organização de Eventos</label> <br>
+                    <label><input type="radio" name="area" value="composicao"> Composição Musical</label>
+                </fieldset>
+                <br>
+                
+                <input type="submit" value="Enviar Cadastro de Voluntário">
+
+                <div class="modal-overlay" id="modal-termos">
+                    <div class="modal-content">
+                        <h3>Termo de Compromisso</h3>
+                        <p>Ao se inscrever como voluntário, você concorda com as diretrizes de segurança da ONG Teoria das Cordas.</p>
+                        <button type="button" id="btn-fechar">Entendido</button>
+                    </div>
+                </div>
+            </form>
+        </section>
+        <br>
+
+        
+        <footer>
+            <h5>Entre em Contato</h5>
+            <a href="https://instagram.com/ongteoriadascordas">
+                <img src="img/Instagram_icon.png" width="40" height="40" alt="Visitar o Instagram da ONG Teoria das Cordas">
+            </a>
+            <address>contato@teoriadascordas.org.br</address>
+            <h6>ONG Teoria das Cordas ©</h6>
+        </footer>
+
+    </main>
+</body>
+</html>
