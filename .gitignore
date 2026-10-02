@@ -1,0 +1,9 @@
+Plaintext
+# Arquivos do sistema operacional
+.DS_Store
+Thumbs.db
+
+# Arquivos temporários e logs
+*~
+*.log
+node_modules/
