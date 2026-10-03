@@ -1,4 +1,6 @@
-
+// Módulo de RASCUNHO: salva e restaura qualquer formulário no localStorage.
+// Lê os campos pelo atributo "name", então não precisa listar cada campo manualmente.
+// Campos listados em "ignorar" (ex.: CPF) nunca são salvos nem restaurados.
 
 export function iniciarRascunho({ formulario, chave, ignorar = [] }) {
     if (!formulario) return { limpar() {} };
@@ -26,7 +28,9 @@ export function iniciarRascunho({ formulario, chave, ignorar = [] }) {
 
         for (const [nome, valor] of Object.entries(dados)) {
             if (ignorar.includes(nome)) continue;
+
             const campo = formulario.elements[nome];
+            // Funciona para inputs comuns e também para grupos de radio (RadioNodeList).
             if (campo) campo.value = valor;
         }
     }
