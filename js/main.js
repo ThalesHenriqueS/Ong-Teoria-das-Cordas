@@ -1,5 +1,4 @@
-// Ponto de entrada (composition root): é o ÚNICO lugar que conhece todos os módulos.
-// Ele busca os elementos do DOM, liga as peças e define como elas conversam.
+
 
 import { iniciarMenu } from './menu.js';
 import { iniciarNavegacao } from './navegacao.js';
@@ -24,12 +23,12 @@ iniciarNavegacao({
     aoNavegar: menu.fechar
 });
 
-// Galeria de fotos
+
 iniciarGaleria(document.getElementById('galeria-container'), dadosGaleria);
 
-// Cadastro: o rascunho é salvo enquanto digita e limpo quando o envio é válido
+
 const formCadastro = document.getElementById('meu-formulario');
-const rascunho = iniciarRascunho({ formulario: formCadastro, chave: CHAVE_RASCUNHO });
+const rascunho = iniciarRascunho({ formulario: formCadastro, chave: CHAVE_RASCUNHO, ignorar: ['cpf'] });
 
 iniciarFormulario({
     formulario: formCadastro,
